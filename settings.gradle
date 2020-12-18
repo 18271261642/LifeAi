@@ -1,2 +1,3 @@
 rootProject.name='LifeAi'
-include ':app'
+include ':app', ':widget'
+include ':base'
