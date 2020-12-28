@@ -17,12 +17,6 @@ import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 
 
-/**
- *    author : Android 轮子哥
- *    github : https://github.com/getActivity/AndroidProject
- *    time   : 2018/10/18
- *    desc   : 项目中的 Activity 基类
- */
 public abstract class MyActivity extends BaseActivity
         implements ToastAction, TitleBarAction,
         SwipeAction {

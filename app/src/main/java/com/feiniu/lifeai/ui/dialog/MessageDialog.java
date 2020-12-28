@@ -3,7 +3,6 @@ package com.feiniu.lifeai.ui.dialog;
 import android.content.Context;
 import android.view.View;
 import android.widget.TextView;
-
 import com.feiniu.lifeai.R;
 import com.hjq.base.BaseDialog;
 import androidx.annotation.StringRes;

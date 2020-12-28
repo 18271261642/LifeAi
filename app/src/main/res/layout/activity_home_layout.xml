@@ -13,7 +13,7 @@
         android:layout_weight="1" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bv_home_navigation"
+        android:id="@+id/vp_home_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"

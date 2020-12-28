@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/comment_title_layout"/>
+
+
+    <RelativeLayout
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/commTitleLayout"
+        android:id="@+id/lightTimeRel"
+        android:layout_marginTop="10dp"
+        style="@style/B30DeviceRelStyle"
+        android:background="@drawable/square_white_btn_change">
+
+
+
+        <TextView
+            style="@style/B30DeviceStyle"
+            android:text="亮屏时长" />
+
+
+        <TextView
+            android:id="@+id/lightTimeShowTv"
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@id/lightTmpTv"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:text="8.0" />
+
+
+        <TextView
+            android:id="@+id/lightTmpTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/ig2"
+            android:text="@string/second"/>
+
+
+        <ImageView
+            android:id="@+id/ig2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/fgm_fitness_arrow_left" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/lightTimeTmpV"
+        app:layout_constraintTop_toBottomOf="@+id/lightTimeRel"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/chang_white"/>
+
+
+
+    <Button
+        android:id="@+id/lightTimeBtn"
+        app:layout_constraintTop_toBottomOf="@+id/lightTimeTmpV"
+        android:layout_width="match_parent"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:background="@color/appThemeColor"
+        android:layout_height="wrap_content"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
