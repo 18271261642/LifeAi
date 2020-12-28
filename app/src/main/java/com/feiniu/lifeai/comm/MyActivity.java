@@ -109,6 +109,10 @@ public abstract class MyActivity extends BaseActivity
     @NonNull
     protected ImmersionBar createStatusBarConfig() {
         return ImmersionBar.with(this)
+                .statusBarColor(R.color.white)
+                .fitsSystemWindows(true)
+                .navigationBarColor(R.color.appThemeColor)
+
                 // 默认状态栏字体颜色为黑色
                 .statusBarDarkFont(isStatusBarDarkFont());
     }

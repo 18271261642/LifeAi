@@ -27,7 +27,7 @@ public class SplashActivity extends MyActivity {
 
     @Override
     protected void initData() {
-        startActivity(MsgActivity.class);
+        startActivity(HomeActivity.class);
         finish();
     }
 

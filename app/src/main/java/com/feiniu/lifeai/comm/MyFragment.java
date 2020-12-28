@@ -70,6 +70,8 @@ public abstract class MyFragment<A extends MyActivity> extends BaseFragment<A>
     protected ImmersionBar createStatusBarConfig() {
         return ImmersionBar.with(this)
                 // 默认状态栏字体颜色为黑色
+                .statusBarColor(R.color.white)
+                .fitsSystemWindows(true)
                 .statusBarDarkFont(statusBarDarkFont())
                 // 解决软键盘与底部输入框冲突问题，默认为false，还有一个重载方法，可以指定软键盘mode
                 .keyboardEnable(true);
