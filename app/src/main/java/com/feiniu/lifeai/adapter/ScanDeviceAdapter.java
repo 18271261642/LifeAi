@@ -16,6 +16,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 /**
+ * 搜索设备
  * Created by Admin
  * Date 2019/10/30
  */
